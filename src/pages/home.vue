@@ -1,9 +1,9 @@
 <template>
     <div class="md-body">
-        <h1>Hello home</h1>
-        <p>Edit me</p>
         <div class="card__wrapper" v-for="item in items" :key="item.id">
-            <Card :name="`${item.lvl} lvl`" :title="item.title"/>
+            <Card :name="`${item.lvl} lvl`" :title="item.title">
+                {{ item.descr }}
+            </Card>
         </div>
     </div>
 </template>
